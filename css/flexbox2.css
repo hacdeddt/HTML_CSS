@@ -1,0 +1,54 @@
+h1 {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.list1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.list1__items {
+  width: 18%;
+  height: 10rem;
+  background: deeppink;
+  position: relative;
+}
+
+.list1__items > span {
+  position: absolute;
+  top:50%;
+  transform: translateX(-50%);
+}
+
+.list1__items:last-child {
+  margin-left: auto;
+}
+
+/* LIST 2 */
+.list2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list2__items {
+  width: 20%;
+  height: 10rem;
+  background: rgb(67, 154, 204);
+}
+
+@media screen and (max-width: 767px) {
+  .list2 {
+    flex-direction: column-reverse; /* Đảo ngược lại thứ tự của item */
+  }
+  .list2__items {
+    width: 100%;
+    /* order: 0; để set thứ tự của các item, 0 sẽ xuống dưới */
+  }
+
+  /* .list2__items:first-child {
+    order: 1;
+  } */
+}

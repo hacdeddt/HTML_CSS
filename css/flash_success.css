@@ -1,0 +1,69 @@
+:root {
+  --font-size: 62.5%;
+  --success-color1: #76b649;
+  --success-color2: #a9c34e;
+}
+
+html {
+  font-size: var(--font-size); /* 1rem = 10px; */
+}
+
+.flash-success {
+  display: flex;
+  align-items: center;
+  margin: 5rem auto;
+  padding: 3rem 2rem;
+  position: relative;
+
+  border-top: 4px solid var(--success-color1);
+  box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.05);
+  
+  width: 50rem;
+  background: #fff;
+}
+
+.flash-success__icon {
+  background: linear-gradient(90deg, var(--success-color1), var(--success-color2));
+  width: 14rem;
+  padding: 1.5rem;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  color: white;
+  text-transform: uppercase;
+  margin-left: -5rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.flash-success__icon > i {
+  margin-right: 1rem;
+}
+
+.flash-success__message {
+  margin-left: 2rem;
+}
+.flash-success__title {
+  color: var(--success-color1);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.flash-success__description {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.flash-success__close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 2rem;
+  color: var(--success-color1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --font-size: 35%;
+  }
+}

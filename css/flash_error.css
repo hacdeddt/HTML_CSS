@@ -1,0 +1,69 @@
+:root {
+  --text-color: blue;
+  --danger-color: #e3508a;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px; */
+}
+
+.error_message {
+  width: 50rem;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin: 5rem auto;
+  border-top: 4px solid var(--danger-color);
+  padding: 3rem 2rem;
+  box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.025);
+  position: relative;
+}
+.error_icon {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 2rem;
+  border-radius: 1.7rem;
+  background: var(--danger-color);
+  position: relative;
+  margin-left: -5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.error_icon i {
+  margin-right: 2rem;
+}
+.error_connect{
+  margin-left: 2rem;
+}
+.error_close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  color: var(--danger-color);
+  cursor: pointer;
+  font-size: 2rem;
+}
+.error_title {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--danger-color);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.error_notice {
+  color: #423838;
+  font-size: 1.2rem;
+}
+.error_reconnect {
+  font-weight: bold;
+  color: #1a1c28;
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --danger-color: #e64040e0;
+  }
+}

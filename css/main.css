@@ -1,0 +1,18 @@
+* {
+	margin: 0px;
+	padding: 0xp;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

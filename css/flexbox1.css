@@ -1,0 +1,22 @@
+
+.list {
+  --spacing: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: var(--spacing);
+  width: 80%;
+  float: right;
+}
+
+.list__items {
+  margin: 0 var(--spacing);
+  width: calc(33.33% - var(--spacing)*2);
+  padding: calc(var(--spacing) * 2);
+}
+
+@media screen and (max-width: 767px) {
+  .list__items {
+    width: 100%;
+  }
+}

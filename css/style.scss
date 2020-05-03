@@ -1,0 +1,21 @@
+$primary_color: red;
+
+@mixin flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 200px;
+  height: 200px;
+  &__logo {
+    background: $primary_color;
+    display: block;
+    height: 100%;
+    font-size: 2rem;
+
+    @include flex();
+  }
+}

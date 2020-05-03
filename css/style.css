@@ -1,0 +1,14 @@
+.header {
+  width: 200px;
+  height: 200px; }
+  .header__logo {
+    background: red;
+    display: block;
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+
+/*# sourceMappingURL=style.css.map */
